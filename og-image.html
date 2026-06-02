@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  width: 1200px; height: 630px; overflow: hidden;
+  background: #0a0a0f;
+  font-family: 'Georgia', serif;
+  display: flex; align-items: center;
+  position: relative;
+}
+.bg-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+.bg-glow {
+  position: absolute; right: 0; top: 0; bottom: 0; width: 60%;
+  background: radial-gradient(ellipse at 80% 50%, rgba(15,52,96,0.5) 0%, transparent 70%);
+}
+.left {
+  position: relative; z-index: 2;
+  padding: 60px 0 60px 80px;
+  flex: 1;
+}
+.eyebrow {
+  font-family: Arial, sans-serif;
+  font-size: 13px; letter-spacing: 4px; text-transform: uppercase;
+  color: #c9a84c; margin-bottom: 24px;
+  display: flex; align-items: center; gap: 12px;
+}
+.eyebrow::before { content:''; width:40px; height:1px; background:#c9a84c; display:block; }
+.name {
+  font-size: 72px; font-weight: 700; line-height: 1;
+  color: #e8e6e0; margin-bottom: 16px; letter-spacing: -1px;
+}
+.title {
+  font-family: Arial, sans-serif;
+  font-size: 15px; color: #8a8a9a;
+  letter-spacing: 2px; text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.metrics {
+  display: flex; gap: 32px;
+}
+.m {
+  border-left: 2px solid #c9a84c; padding-left: 16px;
+}
+.m-num {
+  font-size: 36px; font-weight: 700; color: #c9a84c; line-height: 1;
+}
+.m-label {
+  font-family: Arial, sans-serif;
+  font-size: 11px; color: #8a8a9a; margin-top: 4px; letter-spacing: 0.5px;
+}
+.right {
+  position: relative; z-index: 2;
+  width: 300px; padding: 60px 80px 60px 0;
+  display: flex; flex-direction: column; gap: 20px; align-items: flex-end;
+}
+.badge {
+  background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.3);
+  padding: 12px 20px; border-radius: 4px; text-align: right;
+}
+.badge-num { font-size: 28px; color: #c9a84c; font-weight: 700; }
+.badge-label { font-family: Arial, sans-serif; font-size: 10px; color: #8a8a9a; letter-spacing: 1px; text-transform: uppercase; }
+.url {
+  position: absolute; bottom: 32px; right: 80px;
+  font-family: Arial, sans-serif;
+  font-size: 12px; color: rgba(201,168,76,0.5); letter-spacing: 1px;
+}
+.divider {
+  position: absolute; left: 0; right: 0; bottom: 0; height: 3px;
+  background: linear-gradient(90deg, #c9a84c, rgba(201,168,76,0.1));
+}
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="bg-glow"></div>
+<div class="left">
+  <div class="eyebrow">Finance Manager · Cairo, Egypt</div>
+  <div class="name">Gamal<br>Hussein</div>
+  <div class="title">CFO-Track · Digital Finance Builder</div>
+  <div class="metrics">
+    <div class="m">
+      <div class="m-num">3×</div>
+      <div class="m-label">Promoted<br>13 Months</div>
+    </div>
+    <div class="m">
+      <div class="m-num">11pt</div>
+      <div class="m-label">Cost<br>Reduction</div>
+    </div>
+    <div class="m">
+      <div class="m-num">47%</div>
+      <div class="m-label">Operating<br>Profit</div>
+    </div>
+    <div class="m">
+      <div class="m-num">35M+</div>
+      <div class="m-label">EGP<br>Managed</div>
+    </div>
+  </div>
+</div>
+<div class="right">
+  <div class="badge">
+    <div class="badge-num">36%→47%</div>
+    <div class="badge-label">Operating Profit Growth</div>
+  </div>
+  <div class="badge">
+    <div class="badge-num">64%→53%</div>
+    <div class="badge-label">Cost Reduction</div>
+  </div>
+  <div class="badge">
+    <div class="badge-num">Egypt & GCC</div>
+    <div class="badge-label">Open to Opportunities</div>
+  </div>
+</div>
+<div class="url">gemy2242.github.io/gamal-hussein</div>
+<div class="divider"></div>
+</body>
+</html>
